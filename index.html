@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>My Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>My E-commerce Store</h1>
+
+<button
+id="loginBtn"
+
+onclick="showLogin()"
+>
+
+Login
+
+</button>
+
+<div id="loginBox"></div>
+
+<div id="logoutBox"></div>
+
+<h2>Admin Panel</h2>
+
+<input
+id="newName"
+placeholder="Product Name"
+>
+
+<input
+id="newPrice"
+placeholder="Price"
+>
+
+<input
+id="newDesc"
+placeholder="Description"
+>
+
+<button
+onclick="addProduct()"
+>
+
+Add Product
+
+</button>
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search Product"
+
+onkeyup="loadProducts()"
+
+>
+
+<h2 id="cart">
+
+Cart: 0
+
+</h2>
+
+<div id="cartItems"></div>
+
+<h2 id="total">
+
+Total: ₹0
+
+</h2>
+
+<button onclick="checkout()">
+
+Checkout
+
+</button>
+
+<div id="products"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
